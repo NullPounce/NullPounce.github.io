@@ -1,0 +1,589 @@
+<!DOCTYPE html><html lang=""><head><script type="text/javascript" class="silex-json-styles" data-silex-static="">
+    window.silex = window.silex || {}
+    window.silex.data = {"site":{"width":960},"pages":[{"id":"page-home","displayName":"Home","link":{"linkType":"LinkTypePage","href":"#!page-home"},"canDelete":true,"canProperties":true,"canMove":true,"canRename":true,"opened":false},{"id":"page-our-mission","displayName":"Our Mission","link":{"linkType":"LinkTypePage","href":"#!page-our-mission"},"canDelete":true,"canProperties":true,"canMove":true,"canRename":true,"opened":false},{"id":"page-java-challenge","displayName":"Java Challenge","link":{"linkType":"LinkTypePage","href":"#!page-java-challenge"},"canDelete":true,"canProperties":true,"canMove":true,"canRename":true,"opened":false},{"id":"page-how-to-help","displayName":"How to Help","link":{"linkType":"LinkTypePage","href":"#!page-how-to-help"},"canDelete":true,"canProperties":true,"canMove":true,"canRename":true,"opened":false},{"id":"page-contact","displayName":"Contact","link":{"linkType":"LinkTypePage","href":"#!page-contact"},"canDelete":true,"canProperties":true,"canMove":true,"canRename":true,"opened":false}]}</script>
+    <title>Ipsoom Center - Silex template</title>
+    <meta charset="UTF-8">
+    <meta name="generator" content="Silex v2.2.14">
+    <!-- leave this for stats -->
+    <script type="text/javascript" src="http://localhost:6805/static/2.12/jquery.js" data-silex-static=""></script>
+    <script type="text/javascript" src="http://localhost:6805/static/2.12/jquery-ui.js" data-silex-static="" data-silex-remove-publish=""></script>
+
+    <script type="text/javascript" src="http://localhost:6805/static/2.12/pageable.js" data-silex-static="" data-silex-remove-publish=""></script>
+    <script type="text/javascript" src="http://localhost:6805/static/2.12/front-end.js" data-silex-static=""></script>
+    <!-- Normalize -->
+    <link href="http://localhost:6805/static/2.12/normalize.css" rel="stylesheet" data-silex-static="">
+    <!-- Silex style -->
+    <link href="http://localhost:6805/static/2.12/front-end.css" rel="stylesheet" data-silex-static="">
+
+    <style class="silex-style">.nav-mark a {transition: background-color .5s ease;}.sub-nav.sub-nav-active {width: 250px; box-shadow: 0 1px 10px black;}.sub-nav {transition: all .15s ease-out; z-index: 100; cursor: pointer;}</style>
+    <script type="text/javascript" class="silex-script">/* slider buttons */
+$(function() {
+    try {
+        var slider = $('.slider .unslider').children().get(0);
+        var unslider = $(slider).data('unslider');
+        $('.sub-nav').click(function() {
+            unslider.next()
+            $('.sub-nav-active').removeClass('sub-nav-active');
+            $(this).addClass('sub-nav-active');
+        });
+    }
+    catch(e) {
+    }
+})
+
+
+</script>
+    
+    <style class="silex-inline-styles">.body-initial {background-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-left-color: rgb(0, 0, 0); position: static;}.silex-id-1538221038117-34 {position: static; margin-top: -1px;}.silex-id-1538221038114-33 {min-height: 20px; position: relative; margin-left: auto; margin-right: auto;}.silex-id-1490693608162-3 {background-color: rgba(37,15,37,1); min-width: 960px; position: static; margin-top: -1px;}.silex-id-1490693608161-2 {background-color: transparent; min-height: 1244px; position: relative; margin-left: auto; margin-right: auto;}.silex-id-1552775712222-12 {width: 33px; background-color: transparent; top: 100px; left: 774px; min-height: 27px; position: absolute;}.silex-id-1439554967492-62 {width: 77px; top: 7px; left: 868.5px; box-sizing: content-box; min-height: 46px; position: absolute;}.silex-id-1439554967286-60 {width: 133px; top: 7px; left: 319.5px; box-sizing: content-box; min-height: 46px; position: absolute;}.silex-id-1439554966975-57 {width: 154px; top: 7px; left: 562px; box-sizing: content-box; min-height: 56px; position: absolute;}.silex-id-1439554966767-55 {width: 146px; top: 7px; left: 716px; box-sizing: content-box; min-height: 46px; position: absolute;}.silex-id-1439554966563-53 {width: 95px; top: 7px; left: 460.5px; box-sizing: content-box; min-height: 46px; position: absolute;}.silex-id-1552775732073-13 {width: 100px; background-color: rgb(255, 255, 255); top: 100px; left: 740px; min-height: 100px; position: absolute;}.silex-id-1490693931165-7 {background-color: rgba(56,37,52,1); min-width: 960px; position: static; margin-top: -1px;}.silex-id-1490693931163-6 {background-color: transparent; min-height: 703px; position: relative; margin-left: auto; margin-right: auto;}.silex-id-1490694258064-17 {background-color: transparent; border-color: #000000; min-width: 960px; position: static; margin-top: -1px;}.silex-id-1490694258062-16 {background-color: transparent; border-color: #000000; min-height: 744px; position: relative; margin-left: auto; margin-right: auto;}.silex-id-1548873212201-7 {height: 400px; width: 456px; background-color: transparent; top: 92px; left: 504px; position: absolute;}.silex-id-1490694152451-11 {background-color: transparent; min-width: 960px; position: static; margin-top: -1px;}.silex-id-1490694152449-10 {background-color: transparent; min-height: 236px; position: relative; margin-left: auto; margin-right: auto;}.silex-id-1490694217944-13 {background-color: transparent; position: static; margin-top: -1px;}.silex-id-1490694217944-12 {background-color: transparent; min-height: 236px; position: relative; margin-left: auto; margin-right: auto;}.silex-id-1490694237194-15 {background-color: transparent; min-width: 960px; position: static; margin-top: -1px;}.silex-id-1490694237193-14 {background-color: transparent; min-height: 232px; position: relative; margin-left: auto; margin-right: auto;}.silex-id-1439554962792-16 {width: 600px; top: 1149px; left: 184px; box-sizing: content-box; background-color: transparent; min-height: 51px; position: absolute;}.silex-id-1676862616043-1 {width: 52px; min-height: 37px; background-color: transparent; position: absolute; top: 7px; left: 5px;}.silex-id-1676866330807-3 {width: 88px; height: 85px; position: absolute; top: 17px; left: 12px;}.silex-id-1676873603930-11 {width: 88px; height: 31px; position: absolute; top: 973px; left: 173.5px;}.silex-id-1676927991288-0 {width: 88px; height: 31px; position: absolute; top: 973px; left: 349.5px;}.silex-id-1676928008357-1 {width: 88px; height: 31px; position: absolute; top: 973px; left: 261.5px;}.silex-id-1676928031740-2 {width: 256px; height: 256px; position: absolute; top: 689px; left: 63px;}.silex-id-1676928057089-3 {width: 256px; height: 256px; position: absolute; top: 689px; left: 355px;}.silex-id-1676928769589-4 {width: 256px; height: 256px; position: absolute; top: 695px; left: 644px;}.silex-id-1676928798216-5 {width: 229px; height: 80px; position: absolute; top: 538px; left: 32px;}.silex-id-1676929054241-6 {width: 906px; height: 89px; position: absolute; top: 611px; left: 46.5px;}.silex-id-1676929683985-7 {width: 88px; height: 31px; position: absolute; top: 973px; left: 437px;}.silex-id-1676930454191-8 {width: 188px; height: 190px; position: absolute; top: 945px; left: 724px;}@media only screen and (max-width: 480px) {.silex-id-1538221038117-34 {top: 0px; left: 0px;}.silex-id-1538221038114-33 {min-height: 52px;}.silex-id-1490693608161-2 {min-height: 106px;}.silex-id-1552775712222-12 {left: 3px; top: 55px; min-height: 27px; width: 33px;}.silex-id-1552775732073-13 {left: -176px; top: 0px; background-color: transparent; width: 291px; min-height: 20px;}.silex-id-1490693931165-7 {top: 58px; left: 0px;}.silex-id-1490693931163-6 {min-height: 0px;}}</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet" class="silex-custom-font"><meta name="viewport" content="width=device-width, initial-scale=1"><style class="silex-style-settings">.website-width {width: 960px;}@media (min-width: 481px) {.silex-editor {min-width: 1160px;}}</style><style class="silex-prodotype-style" data-style-id="all-style">h2 {font-weight: 400;}.text-element > .silex-element-content {font-family: 'Roboto', sans-serif; font-weight: 400; color: #FEFFFD;}a {color: #FF9900; text-decoration: none;}[data-silex-href] {color: #FF9900; text-decoration: none;}@media only screen and (max-width: 480px) {.text-element > .silex-element-content {font-size: 200%;}}</style><style class="silex-prodotype-style" data-style-id="nav">.nav.text-element > .silex-element-content {font-weight: 400; font-size: 18px; text-align: center; text-transform: uppercase; line-height: 10px;}.nav a {color: #ffffff; padding-top: 5px; padding-left: 10px; padding-bottom: 5px; padding-right: 10px;}.nav [data-silex-href] {color: #ffffff; padding-top: 5px; padding-left: 10px; padding-bottom: 5px; padding-right: 10px;}.nav .page-link-active {background-color: #FF9900;}.nav a:hover {background-color: #FF9900;}.nav [data-silex-href]:hover {background-color: #FF9900;}@media only screen and (max-width: 480px) {.nav ul li {list-style-type: none; line-height: 2;}}</style><style class="silex-prodotype-style" data-style-id="header">.header.text-element > .silex-element-content {line-height: 2;}</style><style class="silex-prodotype-style" data-style-id="white-title">.white-title h2 {font-weight: 100; font-size: 38px; color: #000000; text-transform: capitalize; line-height: 0;}.white-title h2::first-letter {font-weight: 400; color: #ffffff; background-color: #ff9900; letter-spacing: 10px;}</style><style class="silex-prodotype-style" data-style-id="black-text">.black-text.text-element > .silex-element-content {color: #000000;}</style><style class="silex-prodotype-style" data-style-id="content">.content h2 {text-transform: uppercase;}.content h3 {font-weight: normal; font-size: 28px; line-height: 0.4;}.content u {color: #ff9900; text-decoration: none;}</style><style class="silex-prodotype-style" data-style-id="phone-number">.phone-number.text-element > .silex-element-content {font-size: 30px; line-height: 0;}.phone-number b {font-weight: normal; color: #665847;}</style><style class="silex-prodotype-style" data-style-id="buttons">.buttons h2 {font-weight: 200;}.buttons h3 {font-weight: normal; font-size: 22px;}.buttons.text-element > .silex-element-content {font-size: 25px; text-transform: uppercase; line-height: 5px;}.buttons p {font-weight: 200; font-size: 18px; text-align: center; line-height: 0;}</style><style class="silex-prodotype-style" data-style-id="footer">.footer.text-element > .silex-element-content {text-align: center;}</style><style class="silex-prodotype-style" data-style-id="quote">.quote.text-element > .silex-element-content {font-size: 59px;}</style><link data-dependency="" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.3.1/css/ol.css" rel="stylesheet"><script data-dependency="" src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.3.1/build/ol.js"></script></head>
+
+<body data-silex-type="container-element" class="body-initial all-style enable-mobile prevent-resizable prevent-selectable editable-style silex-runtime" data-silex-id="body-initial" style="">
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+    <div class=""></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+    
+
+    
+    
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav data-silex-type="container-element" class="container-element editable-style silex-id-1538221038117-34 section-element hide-on-desktop prevent-resizable" data-silex-id="silex-id-1538221038117-34"><div data-silex-type="container-element" class="editable-style silex-id-1538221038114-33 container-element silex-element-content website-width" data-silex-id="silex-id-1538221038114-33" style=""><div data-silex-type="text-element" class="editable-style silex-id-1552775712222-12 text-element silex-component prevent-resizable hide-on-desktop nav prevent-auto-z-index" data-silex-id="silex-id-1552775712222-12" style=""><div class="silex-element-content normal"><style>.hamburger-menu_1676927002039_118 {position: absolute; z-index: 20;}.silex-editor .hamburger-menu_1676927002039_118 nav {left: -9999px;}.hamburger-menu_1676927002039_118 nav ul {margin-top: 80px;}.hamburger-menu_1676927002039_118 nav {opacity: 0; position: absolute; background-color: #333333; transition: left 1s ease, height 0s ease 1s; left: -300px; width: 300px; height: 20px;}.hamburger-menu_1676927002039_118.open nav {opacity: 1; height: 100vh; left: 0; transition: left 1s ease, height 0s ease 0s;}.hamburger-menu_1676927002039_118 .nav-container {z-index: 10; position: absolute;}.hamburger-menu_1676927002039_118.open .nav-container {}.hamburger-menu_1676927002039_118 .hamburger-btn {z-index: 20; cursor: pointer; position: absolute;}.hamburger-menu_1676927002039_118 .hamburger-btn span {display: block; width: 30px; height: 5px; margin-bottom: 3px; position: relative; background-color: #000000; border: 1px solid #ffffff; border-radius: 3px; transition: border-color 0.1s ease-in,
+      opacity 0.1s ease-in,
+      transform 0.1s ease-in,
+      background 0.1s ease-in;}.hamburger-menu_1676927002039_118.open .hamburger-btn span {border-color: rgba(255, 255, 255, 0);}.hamburger-menu_1676927002039_118 .hamburger-btn span:first-child {transform-origin: 4px -2px;}.hamburger-menu_1676927002039_118.open .hamburger-btn span:first-child {transform: rotate(45deg) translate(7px, -4px);}.hamburger-menu_1676927002039_118.open .hamburger-btn span:nth-last-child(2) {opacity: 0;}.hamburger-menu_1676927002039_118 .hamburger-btn span:nth-child(3) {transform-origin: -11px 4px;}.hamburger-menu_1676927002039_118.open .hamburger-btn span:nth-child(3) {transform: rotate(-45deg) translate(0, 12px);}</style>
+<!-- inspired by https://codepen.io/erikterwan/pen/EVzeRP -->
+<div class="hamburger-menu_1676927002039_118 closed">
+    <div class="hamburger-btn ">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="nav-container">
+      <div class="prevent-scale">
+        <nav class="">
+            <ul>
+            
+                <li><a href="#!page-home" class="page-link-active">Home</a></li>
+            
+                <li><a href="#!page-our-mission" class="">Our mission</a></li>
+            
+                <li><a href="#!page-news-press">News &amp; Press</a></li>
+            
+                <li><a href="#!page-how-to-help" class="">How to help</a></li>
+            
+                <li><a href="#!page-contact" class="">Contact</a></li>
+            
+            </ul>
+        </nav>
+      </div>
+  </div>
+</div>
+<script>
+(function() {
+  var isOpen = false;
+  function close() {
+    isOpen = false;
+    document.querySelector('.hamburger-menu_1676927002039_118').classList.remove('open');
+    document.querySelector('.hamburger-menu_1676927002039_118').classList.add('closed');
+  }
+  function open() {
+    isOpen = true;
+    document.querySelector('.hamburger-menu_1676927002039_118').classList.add('open');
+    document.querySelector('.hamburger-menu_1676927002039_118').classList.remove('closed');
+  }
+  function toggle() {
+    if(isOpen) close();
+    else open();
+  }
+  function scrollOrResize() {
+    close();
+    move();
+  }
+  var silexElement = document.querySelector('.hamburger-menu_1676927002039_118').closest('.editable-style');
+  function move() {
+    var data = window.silex
+    var rect = silexElement.getBoundingClientRect();
+    var offset = {
+      top: rect.top + data.scrollTop,
+      left: rect.left + data.scrollLeft,
+    };
+    var container = document.querySelector('.hamburger-menu_1676927002039_118 .nav-container');
+    container.style.transform = 'translate(' + (data.scrollLeft - (offset.left/data.scale)) + 'px, ' + (data.scrollTop - (offset.top/data.scale)) + 'px)';
+  }
+  document.querySelector('.hamburger-menu_1676927002039_118 .hamburger-btn').addEventListener('click', function() { toggle(); });
+  document.addEventListener('resize', scrollOrResize);
+  document.addEventListener('scroll', scrollOrResize);
+  scrollOrResize()
+  setTimeout(() => scrollOrResize(), 0)
+})();
+</script>
+</div></div><div data-silex-type="container-element" class="editable-style silex-id-1552775732073-13 container-element hide-on-desktop" data-silex-id="silex-id-1552775732073-13"></div></div></nav><header data-silex-type="container-element" class="container-element website-min-width editable-style silex-id-1490693608162-3 section-element prevent-resizable" data-silex-id="silex-id-1490693608162-3" style="">
+        <nav data-silex-type="container-element" class="editable-style silex-element-content website-width silex-id-1490693608161-2 container-element" data-silex-id="silex-id-1490693608161-2" style="">
+            
+            
+            
+
+
+            
+            
+            
+        <div data-silex-type="html-element" class="editable-style html-element silex-id-1676862616043-1 page-home paged-element" data-silex-id="silex-id-1676862616043-1" style=""><div class="silex-element-content">
+
+  
+    <title>Simulated Linux Terminal</title>
+    <style>#terminal {height: 405px; width: 840px; border: 1px solid #ccc; font-family: monospace; font-size: 16px; background-color: black; color: rgb(131, 11, 187); position: absolute; top: 100px; left: 100px; overflow-y: scroll;}#top-bar {height: 32px; background-color: #ccc; color: #333; padding: 5px; cursor: move; position: absolute; top: 58px; left: 100px; width: 832px; z-index: 1;}#close-btn {float: right; font-weight: bold; cursor: pointer;}#input-line {display: flex; align-items: center; height: 30px; padding: 5px; color: rgb(131, 11, 187);}#input-prefix {color: rgb(131, 11, 187);}#input-field {background-color: transparent; border: none; color: rgb(131, 11, 187); font-family: monospace; font-size: 16px; width: 100%; margin-left: 5px; outline: none;}#terminal-output {margin-top: 40px;}</style>
+  
+  
+    <div id="top-bar">
+      Simulated Linux Terminal
+      <span id="close-btn">X</span>
+    </div>
+
+    <div id="terminal">
+      <div id="terminal-output">
+        <div class="neofetch h-card">
+          <img class="neofetch-img u-logo" src="pounce.png" width="32" height="32">
+          <div class="neofetch-text">
+            <b class="magenta">NullPounce</b>@<b class="magenta">github.io</b><br>
+            ----------------------------<br>
+            <span class="p-note">
+              hi i'm <b><a class="silentlink p-name u-url" href="https://github.com/NullPounce">NullPounce</a></b> Type "help" for a list of commands. <br>
+            </span>
+            I enjoy many things, too much to list here, but most notably:<br>
+            <b>making cool things with the help of VScode and ChatGPT, Github etc
+            <br>Arch Linux user, I use Arch by the way...
+            <br> Cyber Security
+            <br> Java/Android DEV
+            <br> genymotion, mobile security framework, helped hunt down Pegasus spyware
+            <br>
+            <b>links:</b>
+            <a href="https://www.google.com/" rel="me noreferrer" target="_blank">link 1</a>
+            <a href="https://www.google.com/" rel="me noreferrer" target="_blank">link 2</a>
+            
+            <br>
+            <b>contact:</b>
+            <a href="https://privatebin.net/?6dc3b2374cbf9259#7wvSgxnZy4bWfuaatQJ5jpmNzRwiH7xanVwH1djWxqyr" rel="me noreferrer" target="_blank">Email</a>
+            <b>password to unlock email: nullpounce.github.io</b>
+            
+            
+            <br>
+        </b></div><b>
+        </b></div><b>
+      </b></div><b>
+      <div id="input-line">
+        <span id="input-prefix"></span>
+        <input type="text" id="input-field">
+      </div>
+    </b></div><b>
+
+    <script>
+      const topBar = document.getElementById("top-bar");
+      const terminal = document.getElementById("terminal");
+      const inputField = document.getElementById("input-field");
+      const terminalOutput = document.getElementById("terminal-output");
+      const inputPrefix = document.getElementById("input-prefix");
+
+      let isDragging = false;
+      let dragOffset = { x: 0, y: 0 };
+
+      topBar.addEventListener("mousedown", function(event) {
+        isDragging = true;
+        dragOffset.x = event.offsetX;
+        dragOffset.y = event.offsetY;
+      });
+
+      document.addEventListener("mousemove", function(event) {
+        if (isDragging) {
+          const x = event.pageX - dragOffset.x;
+          const y = event.pageY - dragOffset.y;
+          terminal.style.top = y + "px";
+          terminal.style.left = x + "px";
+          topBar.style.top = y + "px";
+          topBar.style.left = x + "px";
+        }
+      });
+
+      document.addEventListener("mouseup", function(event) {
+  isDragging = false;
+});
+
+function showHelp() {
+  const helpMessage = "These are the available commands: <br> help - shows this help message <br> date - displays the current date and time";
+
+  const outputLine = document.createElement("div");
+  outputLine.innerHTML = helpMessage;
+  terminalOutput.appendChild(outputLine);
+  terminal.scrollTop = terminal.scrollHeight;
+}
+
+function showDate() {
+  const date = new Date();
+  const dateString = date.toLocaleString();
+
+  const outputLine = document.createElement("div");
+  outputLine.textContent = dateString;
+  terminalOutput.appendChild(outputLine);
+  terminal.scrollTop = terminal.scrollHeight;
+}
+
+function executeCommand(input) {
+  switch (input) {
+    case "help":
+      showHelp();
+      break;
+    case "date":
+      showDate();
+      break;
+    default:
+      const outputLine = document.createElement("div");
+      outputLine.textContent = `${input}: command not found`;
+      terminalOutput.appendChild(outputLine);
+      terminal.scrollTop = terminal.scrollHeight;
+      break;
+  }
+}
+
+inputField.addEventListener("keydown", function(event) {
+  if (event.key === "Enter") {
+    const input = inputField.value;
+    const outputLine = document.createElement("div");
+    outputLine.innerHTML = `<span style="color: #0f0;">guest@NullPounce:~$</span> ${input}`;
+    terminalOutput.appendChild(outputLine);
+    executeCommand(input);
+    inputField.value = "";
+    terminal.scrollTop = terminal.scrollHeight;
+  }
+});
+
+inputPrefix.innerHTML = `<span style="color: #0f0;">guest@NullPounce:~$</span>`;
+</script>
+
+
+
+<img id="animated-mascot" src="Oanl.gif" style="position: fixed; bottom: 0; right: 0; cursor: move; z-index: 9999;">
+<script>
+  const mascot = document.getElementById("animated-mascot");
+  mascot.addEventListener("mousedown", startDragging);
+
+  function startDragging(event) {
+    let shiftX = event.clientX - mascot.getBoundingClientRect().left;
+    let shiftY = event.clientY - mascot.getBoundingClientRect().top;
+
+    moveAt(event.pageX, event.pageY);
+
+    function moveAt(pageX, pageY) {
+      mascot.style.left = pageX - shiftX + "px";
+      mascot.style.top = pageY - shiftY + "px";
+    }
+
+    function onMouseMove(event) {
+      moveAt(event.pageX, event.pageY);
+    }
+
+    function stopDragging() {
+      document.removeEventListener("mousemove", onMouseMove);
+      mascot.removeEventListener("mouseup", stopDragging);
+    }
+
+    document.addEventListener("mousemove", onMouseMove);
+    mascot.addEventListener("mouseup", stopDragging);
+
+    event.preventDefault();
+  }
+</script>
+</b></div></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1439554967492-62 nav-mark nav hide-on-mobile" data-silex-id="silex-id-1439554967492-62" style="">
+                <div class="silex-element-content normal"><p><a href="#!page-home" class="page-link-active">Home</a></p>
+                </div>
+            </div><div data-silex-type="text-element" class="editable-style text-element silex-id-1439554966767-55 nav-mark nav hide-on-mobile" data-silex-id="silex-id-1439554966767-55" style="">
+                <div class="silex-element-content normal"><p><a href="#!page-how-to-help" class="">How to help</a></p>
+                </div>
+            </div><div data-silex-type="text-element" class="editable-style text-element silex-id-1439554966975-57 nav-mark nav hide-on-mobile" data-silex-id="silex-id-1439554966975-57" style="">
+                <div class="silex-element-content normal"><p><a href="#!page-java-challenge">Java</a></p>
+                </div>
+            </div><div data-silex-type="text-element" class="editable-style text-element silex-id-1439554966563-53 nav-mark nav hide-on-mobile" data-silex-id="silex-id-1439554966563-53" style="">
+                <div class="silex-element-content normal"><p><a href="#!page-contact" class="">Contact</a></p>
+                </div>
+            </div><div data-silex-type="text-element" class="editable-style text-element silex-id-1439554967286-60 nav-mark nav hide-on-mobile" data-silex-id="silex-id-1439554967286-60" style="">
+                <div class="silex-element-content normal">
+                    <p><a href="#!page-our-mission" class="">Our mission</a><br></p></div>
+            </div><a data-silex-type="image-element" class="editable-style image-element silex-id-1676866330807-3 page-home paged-element" data-silex-id="silex-id-1676866330807-3" style="" href="https://nullpounce.github.io/"><img src="download-PhotoRoom.png"></a><a data-silex-type="image-element" class="editable-style image-element silex-id-1676873603930-11 page-home paged-element" data-silex-id="silex-id-1676873603930-11" style="" href="https://yesterweb.org/no-to-web3/"><img src="..\..\Downloads\noweb3.gif"></a><div data-silex-type="image-element" class="editable-style image-element silex-id-1676928008357-1 page-home paged-element" data-silex-id="silex-id-1676928008357-1" style=""><img src="knight.png"></div><a data-silex-type="image-element" class="editable-style image-element silex-id-1676927991288-0 page-home paged-element" data-silex-id="silex-id-1676927991288-0" style="" href="https://nullpounce.github.io/"><img src="Untitled.png"></a><a data-silex-type="image-element" class="editable-style image-element silex-id-1676928031740-2 page-home paged-element" data-silex-id="silex-id-1676928031740-2" style="" href="https://github.com/NullPounce/pounce-keys"><img src="cell.png"></a><a data-silex-type="image-element" class="editable-style image-element silex-id-1676928057089-3 page-home paged-element" data-silex-id="silex-id-1676928057089-3" style="" href="https://github.com/NullPounce/K12-Education-Focus-Scripts"><img src="22.png"></a><a data-silex-type="image-element" class="editable-style image-element silex-id-1676928769589-4 page-home paged-element" data-silex-id="silex-id-1676928769589-4" style="" href="https://github.com/NullPounce/VirtuTerm"><img src="yy.png"></a><div data-silex-type="image-element" class="editable-style image-element silex-id-1676928798216-5 page-home paged-element" data-silex-id="silex-id-1676928798216-5" style=""><img src="Gp4hJjUW.gif"></div><a data-silex-type="image-element" class="editable-style image-element silex-id-1676929683985-7 page-home paged-element" data-silex-id="silex-id-1676929683985-7" style="" href="https://livefree999.org/"><img src="999.png"></a><div data-silex-type="image-element" class="editable-style image-element silex-id-1676929054241-6 page-home paged-element" data-silex-id="silex-id-1676929054241-6" style=""><img src="aAAN1F8V.gif"></div><div data-silex-type="image-element" class="editable-style image-element silex-id-1676930454191-8 page-home paged-element" data-silex-id="silex-id-1676930454191-8" style=""><img src="giphy.gif"></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1439554962792-16 footer" data-silex-id="silex-id-1439554962792-16" style="">
+                <div class="silex-element-content normal"><p>Copyright 2023 @ NullPounce - Null-Pounce</p>
+                    
+                </div>
+            </div></nav>
+    </header><section data-silex-type="container-element" class="container-element website-min-width editable-style silex-id-1490693931165-7 section-element prevent-resizable page-home paged-element" data-silex-id="silex-id-1490693931165-7" style="">
+        
+    <div data-silex-type="container-element" class="editable-style silex-element-content website-width silex-id-1490693931163-6 container-element" data-silex-id="silex-id-1490693931163-6">
+            
+            
+            
+            
+            
+            
+            
+            
+
+
+
+
+
+
+
+        </div></section><section data-silex-type="container-element" class="container-element website-min-width editable-style silex-id-1490694258064-17 section-element prevent-resizable page-contact paged-element" data-silex-id="silex-id-1490694258064-17">
+        <div data-silex-type="container-element" class="editable-style silex-element-content website-width silex-id-1490694258062-16 container-element" data-silex-id="silex-id-1490694258062-16">
+
+            
+            
+        <div data-silex-type="html-element" class="editable-style silex-id-1548873212201-7 html-element silex-component silex-component-map silex-use-height-not-minheight silex-element-content-full-height" data-silex-id="silex-id-1548873212201-7"><div class="silex-element-content"><div id="mapdiv_1676927002041_577" class="map"></div>
+<style>#mapdiv_1676927002041_577 {width: 100%; height: 100%;}</style>
+<script>
+
+
+function init_1676927002041_577() {
+    if(typeof(ol) === 'undefined') {
+        // console.warn('Map not ready, restart later')
+        // wait for dependencies to be loaded
+        setTimeout(init_1676927002041_577, 1000);
+        return;
+    }
+
+    // empty the div before adding the map again
+    $('#mapdiv_1676927002041_577').empty();
+
+    // apply position and zoom
+    // from map URL http://www.openstreetmap.org/#map=18/48.88680/2.34235&layers=C
+    // var params = 'http://www.openstreetmap.org/#map=18/48.87378/2.29489&layers=C'.match(/.*map=([0-9]*)\/(.*)\/(.*)&layers=(.)/);
+    var params = 'http://www.openstreetmap.org/#map=18/48.87378/2.29489&layers=C'.match(/.*map=([0-9]*)\/(.*)\/(.*)/);
+    if(params) {
+        var zoom = parseFloat(params[1]);
+        var lat = parseFloat(params[2]);
+        var lon = parseFloat(params[3]);
+        // var layer = params[4] || 'S';
+        var center = ol.proj.fromLonLat([lon, lat]);
+        var map = new ol.Map({
+          layers: [
+            new ol.layer.Tile({
+              source: new ol.source.OSM()
+            })
+          ],
+          target: 'mapdiv_1676927002041_577',
+          view: new ol.View({
+            center: center,
+            zoom: zoom
+          })
+        });
+        
+    }
+}
+init_1676927002041_577();
+// $(document).on('silex.resize', function() {
+//     $('#mapdiv_1676927002041_577').empty();
+//     init_1676927002041_577();
+// });
+
+</script>
+</div></div></div>
+    </section><section data-silex-type="container-element" class="container-element website-min-width editable-style silex-id-1490694152451-11 section-element prevent-resizable page-our-mission paged-element" data-silex-id="silex-id-1490694152451-11">
+        <div data-silex-type="container-element" class="editable-style silex-element-content website-width silex-id-1490694152449-10 container-element" data-silex-id="silex-id-1490694152449-10">
+            
+        </div>
+    </section><section data-silex-type="container-element" class="container-element website-min-width editable-style silex-id-1490694217944-13 section-element prevent-resizable page-news-press page-java-challenge" data-silex-id="silex-id-1490694217944-13">
+        <div data-silex-type="container-element" class="editable-style silex-element-content website-width silex-id-1490694217944-12 container-element" data-silex-id="silex-id-1490694217944-12">
+            
+        </div>
+    </section><section data-silex-type="container-element" class="container-element website-min-width editable-style silex-id-1490694237194-15 section-element prevent-resizable page-how-to-help paged-element" data-silex-id="silex-id-1490694237194-15">
+        <div data-silex-type="container-element" class="editable-style silex-element-content website-width silex-id-1490694237193-14 container-element" data-silex-id="silex-id-1490694237193-14">
+            
+        </div>
+    </section></body></html>
