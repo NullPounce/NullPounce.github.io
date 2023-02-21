@@ -1,0 +1,381 @@
+<!doctype html><html lang=""><head>
+    <title>Ipsoom Center - Silex template - Java Challenge</title>
+    <meta charset="UTF-8">
+    <meta name="generator" content="Silex v2.2.14">
+    <!-- leave this for stats -->
+    <script src="js/jquery.js"></script>
+    
+
+    
+    <script src="js/front-end.js"></script>
+    <!-- Normalize -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- Silex style -->
+    <link href="css/front-end.css" rel="stylesheet">
+
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet" class="silex-custom-font"><meta name="viewport" content="width=device-width, initial-scale=1"><link href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.3.1/css/ol.css" rel="stylesheet"><script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.3.1/build/ol.js"></script><script src="js/script.js"></script><link href="css/styles.css" rel="stylesheet"><style>body { opacity: 0; transition: .25s opacity ease; }</style></head>
+
+<body class="body-initial all-style enable-mobile prevent-resizable prevent-selectable editable-style silex-runtime silex-published" data-current-page="page-java-challenge">
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+    <div class=""></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+    
+
+    
+    
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="container-element editable-style silex-id-1538221038117-34 section-element hide-on-desktop prevent-resizable"><div class="editable-style silex-id-1538221038114-33 container-element silex-element-content website-width"><div class="editable-style silex-id-1552775712222-12 text-element silex-component prevent-resizable hide-on-desktop nav prevent-auto-z-index"><div class="silex-element-content normal">
+<!-- inspired by https://codepen.io/erikterwan/pen/EVzeRP -->
+<div class="hamburger-menu_1676927002039_118 closed">
+    <div class="hamburger-btn ">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="nav-container">
+      <div class="prevent-scale">
+        <nav class="">
+            <ul>
+            
+                <li><a href="index.html" class="">Home</a></li>
+            
+                <li><a href="blog.html" class="">Our mission</a></li>
+            
+                <li><a href="news-press.html">News &amp; Press</a></li>
+            
+                <li><a href="how-to-help.html" class="">How to help</a></li>
+            
+                <li><a href="contact.html" class="">Contact</a></li>
+            
+            </ul>
+        </nav>
+      </div>
+  </div>
+</div>
+<script>
+(function() {
+  var isOpen = false;
+  function close() {
+    isOpen = false;
+    document.querySelector('.hamburger-menu_1676927002039_118').classList.remove('open');
+    document.querySelector('.hamburger-menu_1676927002039_118').classList.add('closed');
+  }
+  function open() {
+    isOpen = true;
+    document.querySelector('.hamburger-menu_1676927002039_118').classList.add('open');
+    document.querySelector('.hamburger-menu_1676927002039_118').classList.remove('closed');
+  }
+  function toggle() {
+    if(isOpen) close();
+    else open();
+  }
+  function scrollOrResize() {
+    close();
+    move();
+  }
+  var silexElement = document.querySelector('.hamburger-menu_1676927002039_118').closest('.editable-style');
+  function move() {
+    var data = window.silex
+    var rect = silexElement.getBoundingClientRect();
+    var offset = {
+      top: rect.top + data.scrollTop,
+      left: rect.left + data.scrollLeft,
+    };
+    var container = document.querySelector('.hamburger-menu_1676927002039_118 .nav-container');
+    container.style.transform = 'translate(' + (data.scrollLeft - (offset.left/data.scale)) + 'px, ' + (data.scrollTop - (offset.top/data.scale)) + 'px)';
+  }
+  document.querySelector('.hamburger-menu_1676927002039_118 .hamburger-btn').addEventListener('click', function() { toggle(); });
+  document.addEventListener('resize', scrollOrResize);
+  document.addEventListener('scroll', scrollOrResize);
+  scrollOrResize()
+  setTimeout(() => scrollOrResize(), 0)
+})();
+</script>
+</div></div><div class="editable-style silex-id-1552775732073-13 container-element hide-on-desktop"></div></div></nav><header class="container-element website-min-width editable-style silex-id-1490693608162-3 section-element prevent-resizable">
+        <nav class="editable-style silex-element-content website-width silex-id-1490693608161-2 container-element">
+            
+            
+            
+
+
+            
+            
+            
+        <div class="editable-style text-element silex-id-1439554967492-62 nav-mark nav hide-on-mobile">
+                <div class="silex-element-content normal"><p><a href="index.html" class="">Home</a></p>
+                </div>
+            </div><div class="editable-style text-element silex-id-1439554966767-55 nav-mark nav hide-on-mobile">
+                <div class="silex-element-content normal"><p><a href="how-to-help.html" class="">How to help</a></p>
+                </div>
+            </div><div class="editable-style text-element silex-id-1439554966563-53 nav-mark nav hide-on-mobile">
+                <div class="silex-element-content normal"><p><a href="contact.html" class="">Contact</a></p>
+                </div>
+            </div><div class="editable-style text-element silex-id-1439554967286-60 nav-mark nav hide-on-mobile">
+                <div class="silex-element-content normal">
+                    <p><a href="blog.html" class="">Blog</a><br></p></div>
+            </div><div class="editable-style html-element silex-id-1676931875415-9 page-java-challenge paged-element paged-element-visible"><div class="silex-element-content">
+
+
+
+	<title>-=I.C.E.=- Java Challenge L1</title>
+
+
+
+ 
+
+<script language="Javascript">
+
+
+
+function PassConfirm() {
+
+var x=document.password.pass.value
+
+if (x=="hax0r") {
+
+alert("YEAH, congrats")
+
+window.open("l1done.html","_self") }
+
+else {
+
+alert("Dooh, try again!") 
+
+window.open("oops.html","_self") }
+
+
+}
+</script>
+<center>
+
+<p>&nbsp;</p>
+
+<form name="password" method="post">
+
+<br>
+
+<font color="#C0C0C0" size="4">This is the first level, its easy, all you have to do is type in the
+password.<br>
+<br>
+</font><font color="#C0C0C0" size="3">Make sure that you press the *Confirm*-button
+or it won't work<br></font><br>
+<font size="5">
+<font color="Red">Enter a Password</font><br></font><br>
+
+<input type="password" name="pass"> <br><br>
+
+<input type="button" value="PUSH TO CONFIRM" onclick="return PassConfirm()">
+
+</form>
+</center>
+
+
+</div></div><div class="editable-style image-element silex-id-1676931993987-11 page-java-challenge paged-element paged-element-visible"><img src="assets/galahad2.gif"></div><div class="editable-style image-element silex-id-1676931983845-10 page-java-challenge paged-element paged-element-visible"><img src="assets/welcome1.gif"></div><a class="editable-style image-element silex-id-1676932036566-12 page-java-challenge paged-element paged-element-visible" href="https://web.archive.org/web/20051229073822/http://www.icefortress.com/"><img src="assets/icecoat.gif"></a><div class="editable-style text-element silex-id-1676932187649-13 page-java-challenge paged-element paged-element-visible"><div class="silex-element-content normal"><p>Click me</p></div></div><div class="editable-style text-element silex-id-1676932376622-14 page-java-challenge paged-element paged-element-visible"><div class="silex-element-content normal"><p>IceFortress Java hacking Challenges</p><p>Like it's 1998&nbsp;</p></div></div><div class="editable-style text-element silex-id-1439554962792-16 footer">
+                <div class="silex-element-content normal"><p>Copyright 2023 @ NullPounce - Null-Pounce</p>
+                    
+                </div>
+            </div><div class="editable-style text-element silex-id-1439554966975-57 nav-mark nav hide-on-mobile">
+                <div class="silex-element-content normal"><p><a href="java-challenge.html" class="page-link-active">Java</a></p>
+                </div>
+            </div></nav>
+    </header><section class="container-element website-min-width editable-style silex-id-1490694217944-13 section-element prevent-resizable page-news-press page-java-challenge">
+        <div class="editable-style silex-element-content website-width silex-id-1490694217944-12 container-element">
+            
+        </div>
+    </section></body></html>
