@@ -194,3 +194,17 @@ div.editable-style.full-width-section>.editable-style {
 div.editable-style.full-width-section>.editable-style.silex-element-content {
   display: none;
 }
+
+a.editable-style.image-element[data-silex-type="image-element"] {
+  text-decoration: none;
+}
+
+a.editable-style.image-element[data-silex-type="image-element"] img {
+  margin-top: 10px;
+  transition: transform .1s ease;
+  width: 100%;
+}
+
+a.editable-style.image-element[data-silex-type="image-element"]:hover img {
+  transform: scale(1.03);
+}
