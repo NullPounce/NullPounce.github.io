@@ -1,0 +1,365 @@
+<!doctype html><html lang=""><head>
+    <title>Ipsoom Center - Silex template - Contact</title>
+    <meta charset="UTF-8">
+    <meta name="generator" content="Silex v2.2.14">
+    <!-- leave this for stats -->
+    <script src="js/jquery.js"></script>
+    
+
+    
+    <script src="js/front-end.js"></script>
+    <!-- Normalize -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- Silex style -->
+    <link href="css/front-end.css" rel="stylesheet">
+
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet" class="silex-custom-font"><meta name="viewport" content="width=device-width, initial-scale=1"><script src="js/script.js"></script><link href="css/styles.css" rel="stylesheet"><img id="animated-mascot" src="https://s3.gifyu.com/images/Oanl.gif" style="position: fixed; bottom: 0; right: 0; cursor: move; z-index: 9999;">
+<script>
+  const mascot = document.getElementById("animated-mascot");
+  mascot.addEventListener("mousedown", startDragging);
+
+  function startDragging(event) {
+    let shiftX = event.clientX - mascot.getBoundingClientRect().left;
+    let shiftY = event.clientY - mascot.getBoundingClientRect().top;
+
+    moveAt(event.pageX, event.pageY);
+
+    function moveAt(pageX, pageY) {
+      mascot.style.left = pageX - shiftX + "px";
+      mascot.style.top = pageY - shiftY + "px";
+    }
+
+    function onMouseMove(event) {
+      moveAt(event.pageX, event.pageY);
+    }
+
+    function stopDragging() {
+      document.removeEventListener("mousemove", onMouseMove);
+      mascot.removeEventListener("mouseup", stopDragging);
+    }
+
+    document.addEventListener("mousemove", onMouseMove);
+    mascot.addEventListener("mouseup", stopDragging);
+
+    event.preventDefault();
+  }
+</script>
+
+
+
+<script src="./oneko.js"></script>
+
+<style>body { opacity: 0; transition: .25s opacity ease; }</style></head>
+
+<body class="body-initial all-style enable-mobile prevent-resizable prevent-selectable editable-style silex-runtime silex-published" data-current-page="page-contact">
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+    <div class=""></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+    
+
+    
+    
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="container-element editable-style silex-id-1538221038117-34 section-element hide-on-desktop prevent-resizable"><div class="editable-style silex-id-1538221038114-33 container-element silex-element-content website-width"><div class="editable-style silex-id-1552775712222-12 text-element silex-component prevent-resizable hide-on-desktop nav prevent-auto-z-index"><div class="silex-element-content normal">
+<!-- inspired by https://codepen.io/erikterwan/pen/EVzeRP -->
+<div class="hamburger-menu_1677557063284_581 closed">
+    <div class="hamburger-btn ">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="nav-container">
+      <div class="prevent-scale">
+        <nav class="">
+            <ul>
+            
+                <li><a href="index.html" class="">Home</a></li>
+            
+                <li><a href="about.html" class="">Our mission</a></li>
+            
+                <li><a href="news-press.html">News &amp; Press</a></li>
+            
+                <li><a href="how-to-help.html" class="">How to help</a></li>
+            
+                <li><a href="contact.html" class="page-link-active">Contact</a></li>
+            
+            </ul>
+        </nav>
+      </div>
+  </div>
+</div>
+<script>
+(function() {
+  var isOpen = false;
+  function close() {
+    isOpen = false;
+    document.querySelector('.hamburger-menu_1677557063284_581').classList.remove('open');
+    document.querySelector('.hamburger-menu_1677557063284_581').classList.add('closed');
+  }
+  function open() {
+    isOpen = true;
+    document.querySelector('.hamburger-menu_1677557063284_581').classList.add('open');
+    document.querySelector('.hamburger-menu_1677557063284_581').classList.remove('closed');
+  }
+  function toggle() {
+    if(isOpen) close();
+    else open();
+  }
+  function scrollOrResize() {
+    close();
+    move();
+  }
+  var silexElement = document.querySelector('.hamburger-menu_1677557063284_581').closest('.editable-style');
+  function move() {
+    var data = window.silex
+    var rect = silexElement.getBoundingClientRect();
+    var offset = {
+      top: rect.top + data.scrollTop,
+      left: rect.left + data.scrollLeft,
+    };
+    var container = document.querySelector('.hamburger-menu_1677557063284_581 .nav-container');
+    container.style.transform = 'translate(' + (data.scrollLeft - (offset.left/data.scale)) + 'px, ' + (data.scrollTop - (offset.top/data.scale)) + 'px)';
+  }
+  document.querySelector('.hamburger-menu_1677557063284_581 .hamburger-btn').addEventListener('click', function() { toggle(); });
+  document.addEventListener('resize', scrollOrResize);
+  document.addEventListener('scroll', scrollOrResize);
+  scrollOrResize()
+  setTimeout(() => scrollOrResize(), 0)
+})();
+</script>
+</div></div><div class="editable-style silex-id-1552775732073-13 container-element hide-on-desktop"></div></div></nav><header class="container-element website-min-width editable-style silex-id-1490693608162-3 section-element prevent-resizable">
+        
+    <nav class="editable-style silex-element-content website-width silex-id-1490693608161-2 container-element">
+            
+            
+            
+
+
+            
+            
+            
+        <div class="editable-style text-element silex-id-1439554967492-62 nav-mark nav hide-on-mobile">
+                <div class="silex-element-content normal"><p><a href="index.html" class="">Home</a></p>
+                </div>
+            </div><div class="editable-style text-element silex-id-1439554967286-60 nav-mark nav hide-on-mobile">
+                <div class="silex-element-content normal">
+                    <p><a href="about.html" class="">ABOUT</a><br></p></div>
+            </div><div class="editable-style text-element silex-id-1439554966975-57 nav-mark nav hide-on-mobile">
+                <div class="silex-element-content normal"><p><a href="blog.html" class="">BLOG</a></p>
+                </div>
+            </div><div class="editable-style text-element silex-id-1439554966767-55 nav-mark nav hide-on-mobile">
+                <div class="silex-element-content normal"><p><a href="how-to-help.html" class="">How to help</a></p>
+                </div>
+            </div><div class="editable-style text-element silex-id-1439554966563-53 nav-mark nav hide-on-mobile">
+                <div class="silex-element-content normal"><p><a href="contact.html" class="page-link-active">Contact</a></p>
+                </div>
+            </div><a class="editable-style image-element silex-id-1677479246561-26" href="https://nullpounce.github.io/"><img src="assets/logo1-removebg-preview.png"></a></nav></header><section class="container-element website-min-width editable-style silex-id-1490694258064-17 section-element prevent-resizable page-contact paged-element paged-element-visible">
+        <div class="editable-style silex-element-content website-width silex-id-1490694258062-16 container-element">
+
+            
+            
+        <a class="editable-style image-element silex-id-1677555203483-29" href="https://github.com/NullPounce/NullPounce.github.io/blob/main/cv.pdf"><img src="assets/680-it-developer-lineal.gif"></a><div class="editable-style text-element silex-id-1677555403242-31 page-contact paged-element paged-element-visible"><div class="silex-element-content normal"><p>Hello, click my user icon for my contact info.</p><p>windows/Linux config</p><p>custom websites with domain hosting<br></p><p>code reviews</p><p>password recovery assistance</p><p>custom programs written in java for windows and linux "exe"</p><p>Dev/ops training &amp; threat analysis</p></div></div></div>
+    </section><div class="editable-style html-element silex-id-1677477200056-24"><div class="silex-element-content"><div align="center"><a href="https://www.free-website-hit-counter.com"><img src="https://www.free-website-hit-counter.com/c.php?d=9&amp;id=146308&amp;s=1" border="0" alt="visits"></a><br><small><a href="https://www.free-website-hit-counter.com" title="visits">visits</a></small></div></div></div><div class="editable-style text-element silex-id-1439554964112-29">
+                <div class="silex-element-content normal">
+                    <p><i></i>
+                    </p>
+                    <p><i>2023 @ NullPounce&nbsp;</i></p>
+                    <p></p>
+                </div>
+            </div></body></html>

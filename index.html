@@ -1,0 +1,536 @@
+<!doctype html><html lang=""><head>
+    <title>Ipsoom Center - Silex template - Home</title>
+    <meta charset="UTF-8">
+    <meta name="generator" content="Silex v2.2.14">
+    <!-- leave this for stats -->
+    <script src="js/jquery.js"></script>
+    
+
+    
+    <script src="js/front-end.js"></script>
+    <!-- Normalize -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- Silex style -->
+    <link href="css/front-end.css" rel="stylesheet">
+
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet" class="silex-custom-font"><meta name="viewport" content="width=device-width, initial-scale=1"><script src="js/script.js"></script><link href="css/styles.css" rel="stylesheet"><img id="animated-mascot" src="https://s3.gifyu.com/images/Oanl.gif" style="position: fixed; bottom: 0; right: 0; cursor: move; z-index: 9999;">
+<script>
+  const mascot = document.getElementById("animated-mascot");
+  mascot.addEventListener("mousedown", startDragging);
+
+  function startDragging(event) {
+    let shiftX = event.clientX - mascot.getBoundingClientRect().left;
+    let shiftY = event.clientY - mascot.getBoundingClientRect().top;
+
+    moveAt(event.pageX, event.pageY);
+
+    function moveAt(pageX, pageY) {
+      mascot.style.left = pageX - shiftX + "px";
+      mascot.style.top = pageY - shiftY + "px";
+    }
+
+    function onMouseMove(event) {
+      moveAt(event.pageX, event.pageY);
+    }
+
+    function stopDragging() {
+      document.removeEventListener("mousemove", onMouseMove);
+      mascot.removeEventListener("mouseup", stopDragging);
+    }
+
+    document.addEventListener("mousemove", onMouseMove);
+    mascot.addEventListener("mouseup", stopDragging);
+
+    event.preventDefault();
+  }
+</script>
+
+
+
+
+
+<style>body { opacity: 0; transition: .25s opacity ease; }</style></head>
+
+<body class="body-initial all-style enable-mobile prevent-resizable prevent-selectable editable-style silex-runtime silex-published" data-current-page="page-home">
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+    <div class=""></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+    
+
+    
+    
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="container-element editable-style silex-id-1538221038117-34 section-element hide-on-desktop prevent-resizable"><div class="editable-style silex-id-1538221038114-33 container-element silex-element-content website-width"><div class="editable-style silex-id-1552775712222-12 text-element silex-component prevent-resizable hide-on-desktop nav prevent-auto-z-index"><div class="silex-element-content normal">
+<!-- inspired by https://codepen.io/erikterwan/pen/EVzeRP -->
+<div class="hamburger-menu_1677557063284_581 closed">
+    <div class="hamburger-btn ">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="nav-container">
+      <div class="prevent-scale">
+        <nav class="">
+            <ul>
+            
+                <li><a href="index.html" class="page-link-active">Home</a></li>
+            
+                <li><a href="about.html" class="">Our mission</a></li>
+            
+                <li><a href="news-press.html">News &amp; Press</a></li>
+            
+                <li><a href="how-to-help.html" class="">How to help</a></li>
+            
+                <li><a href="contact.html" class="">Contact</a></li>
+            
+            </ul>
+        </nav>
+      </div>
+  </div>
+</div>
+<script>
+(function() {
+  var isOpen = false;
+  function close() {
+    isOpen = false;
+    document.querySelector('.hamburger-menu_1677557063284_581').classList.remove('open');
+    document.querySelector('.hamburger-menu_1677557063284_581').classList.add('closed');
+  }
+  function open() {
+    isOpen = true;
+    document.querySelector('.hamburger-menu_1677557063284_581').classList.add('open');
+    document.querySelector('.hamburger-menu_1677557063284_581').classList.remove('closed');
+  }
+  function toggle() {
+    if(isOpen) close();
+    else open();
+  }
+  function scrollOrResize() {
+    close();
+    move();
+  }
+  var silexElement = document.querySelector('.hamburger-menu_1677557063284_581').closest('.editable-style');
+  function move() {
+    var data = window.silex
+    var rect = silexElement.getBoundingClientRect();
+    var offset = {
+      top: rect.top + data.scrollTop,
+      left: rect.left + data.scrollLeft,
+    };
+    var container = document.querySelector('.hamburger-menu_1677557063284_581 .nav-container');
+    container.style.transform = 'translate(' + (data.scrollLeft - (offset.left/data.scale)) + 'px, ' + (data.scrollTop - (offset.top/data.scale)) + 'px)';
+  }
+  document.querySelector('.hamburger-menu_1677557063284_581 .hamburger-btn').addEventListener('click', function() { toggle(); });
+  document.addEventListener('resize', scrollOrResize);
+  document.addEventListener('scroll', scrollOrResize);
+  scrollOrResize()
+  setTimeout(() => scrollOrResize(), 0)
+})();
+</script>
+</div></div><div class="editable-style silex-id-1552775732073-13 container-element hide-on-desktop"></div></div></nav><header class="container-element website-min-width editable-style silex-id-1490693608162-3 section-element prevent-resizable">
+        <nav class="editable-style silex-element-content website-width silex-id-1490693608161-2 container-element">
+            
+            
+            
+
+
+            
+            
+            
+        <div class="editable-style text-element silex-id-1439554967492-62 nav-mark nav hide-on-mobile">
+                <div class="silex-element-content normal"><p><a href="index.html" class="page-link-active">Home</a></p>
+                </div>
+            </div><div class="editable-style text-element silex-id-1439554967286-60 nav-mark nav hide-on-mobile">
+                <div class="silex-element-content normal">
+                    <p><a href="about.html" class="">ABOUT</a><br></p></div>
+            </div><div class="editable-style text-element silex-id-1439554966975-57 nav-mark nav hide-on-mobile">
+                <div class="silex-element-content normal"><p><a href="blog.html" class="">BLOG</a></p>
+                </div>
+            </div><div class="editable-style text-element silex-id-1439554966767-55 nav-mark nav hide-on-mobile">
+                <div class="silex-element-content normal"><p><a href="how-to-help.html" class="">How to help</a></p>
+                </div>
+            </div><div class="editable-style text-element silex-id-1439554966563-53 nav-mark nav hide-on-mobile">
+                <div class="silex-element-content normal"><p><a href="contact.html" class="">Contact</a></p>
+                </div>
+            </div><a class="editable-style image-element silex-id-1677479246561-26" href="https://nullpounce.github.io/"><img src="assets/logo1-removebg-preview.png"></a></nav>
+    </header><section class="editable-style section-element silex-id-1677472128718-10 page-home paged-element paged-element-visible"><div class="editable-style container-element silex-id-1677472128718-11 silex-element-content website-width prevent-draggable"><div class="editable-style html-element silex-id-1677475192744-15 page-home paged-element hide-on-mobile paged-element-visible"><div class="silex-element-content">
+
+  
+    <title>Welcome to my website</title>
+    
+  
+  
+    <div id="top-bar">
+      Welcome to my website!
+      <span id="close-btn">X</span>
+    </div>
+
+    <div id="terminal">
+      <div id="terminal-output">
+        <div class="neofetch h-card">
+          <img class="neofetch-img u-logo" src="assets/favicon-310.png" width="32" height="32">
+          <div class="neofetch-text">
+            <b class="magenta">NullPounce</b>@<b class="magenta">github.io</b><br>
+            ----------------------------<br>
+            <span class="p-note">
+              Hi i'm <b><a class="silentlink p-name u-url" href="https://github.com/NullPounce">NullPounce</a></b> <br>
+            </span>
+            I enjoy many things, too much to list here, but most notably:<br>
+            <b>making cool things with the help of VScode and ChatGPT, Github etc
+            <br>Arch Linux user, I use Arch by the way...
+            <br> Cyber Security
+            <br> Java/Android DEV
+            <br> genymotion, mobile security framework, helped hunt down Pegasus spyware
+            <br>
+            <b>links:</b>
+            <a href="https://github.com/NullPounce/NullPounce.github.io/blob/main/cv.pdf" rel="me noreferrer" target="_blank">CV</a>
+            
+            
+            
+            
+            
+            <br>
+        </b></div><b>
+        </b></div><b>
+      </b></div><b>
+      <div id="input-line">
+        <span id="input-prefix"></span>
+        <input type="text" id="input-field">
+      </div>
+    </b></div><b>
+
+    <script>
+      const topBar = document.getElementById("top-bar");
+      const terminal = document.getElementById("terminal");
+      const inputField = document.getElementById("input-field");
+      const terminalOutput = document.getElementById("terminal-output");
+      const inputPrefix = document.getElementById("input-prefix");
+
+      let isDragging = false;
+      let dragOffset = { x: 0, y: 0 };
+
+      topBar.addEventListener("mousedown", function(event) {
+        isDragging = true;
+        dragOffset.x = event.offsetX;
+        dragOffset.y = event.offsetY;
+      });
+
+      document.addEventListener("mousemove", function(event) {
+        if (isDragging) {
+          const x = event.pageX - dragOffset.x;
+          const y = event.pageY - dragOffset.y;
+          terminal.style.top = y + "px";
+          terminal.style.left = x + "px";
+          topBar.style.top = y + "px";
+          topBar.style.left = x + "px";
+        }
+      });
+
+      document.addEventListener("mouseup", function(event) {
+  isDragging = false;
+});
+
+function showHelp() {
+  const helpMessage = "These are the available commands: <br> help - shows this help message <br> date - displays the current date and time";
+
+  const outputLine = document.createElement("div");
+  outputLine.innerHTML = helpMessage;
+  terminalOutput.appendChild(outputLine);
+  terminal.scrollTop = terminal.scrollHeight;
+}
+
+function showDate() {
+  const date = new Date();
+  const dateString = date.toLocaleString();
+
+  const outputLine = document.createElement("div");
+  outputLine.textContent = dateString;
+  terminalOutput.appendChild(outputLine);
+  terminal.scrollTop = terminal.scrollHeight;
+}
+
+function executeCommand(input) {
+  switch (input) {
+    case "help":
+      showHelp();
+      break;
+    case "date":
+      showDate();
+      break;
+    default:
+      const outputLine = document.createElement("div");
+      outputLine.textContent = `${input}: command not found`;
+      terminalOutput.appendChild(outputLine);
+      terminal.scrollTop = terminal.scrollHeight;
+      break;
+  }
+}
+
+inputField.addEventListener("keydown", function(event) {
+  if (event.key === "Enter") {
+    const input = inputField.value;
+    const outputLine = document.createElement("div");
+    outputLine.innerHTML = `<span style="color: #0f0;">guest@NullPounce:~$</span> ${input}`;
+    terminalOutput.appendChild(outputLine);
+    executeCommand(input);
+    inputField.value = "";
+    terminal.scrollTop = terminal.scrollHeight;
+  }
+});
+
+inputPrefix.innerHTML = `<span style="color: #0f0;">guest@NullPounce:~$</span>`;
+</script>
+
+
+</b></div></div><div class="editable-style image-element silex-id-1677559941418-5 hide-on-desktop page-home paged-element paged-element-visible"><img src="assets/Screenshot%202023-02-27%20235155.png"></div></div></section><section class="editable-style section-element silex-id-1677475555041-16 page-home paged-element paged-element-visible"><div class="editable-style container-element silex-id-1677475555042-17 silex-element-content website-width prevent-draggable"><div class="editable-style image-element silex-id-1677475737696-18"><img src="assets/Gp4hJjUW.gif"></div><div class="editable-style image-element silex-id-1677478228656-25"><img src="assets/57-server-lineal.gif"></div></div></section><section class="editable-style section-element silex-id-1677491886788-1 page-home paged-element paged-element-visible"><div class="editable-style container-element silex-id-1677491886789-2 silex-element-content website-width prevent-draggable"><a class="editable-style image-element silex-id-1677492664195-4" href="https://github.com/NullPounce/VirtuTerm"><img src="assets/term.gif"></a><a class="editable-style image-element silex-id-1677493186336-5" href="https://github.com/NullPounce/pounce-keys"><img src="assets/demo.gif"></a><a class="editable-style image-element silex-id-1677538117836-3" href="https://github.com/NullPounce/K12-Education-Focus-Scripts"><img src="assets/ezgif-5-46c3b0ac9a.gif"></a></div></section><section class="editable-style section-element silex-id-1677538610965-4 page-home paged-element paged-element-visible"><div class="editable-style container-element silex-id-1677538610965-5 silex-element-content website-width prevent-draggable"><a class="editable-style image-element silex-id-1677538672679-6" href="https://github.com/NullPounce/Kawaii-Browsing"><img src="assets/hk.gif"></a><div class="editable-style html-element silex-id-1677547954186-18"><div class="silex-element-content">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+
+
+<button class="collapsible">VirtuTerm</button>
+<div class="content">
+  <p>A simulated Linux terminal fully in HTML, ability to run commands and click and drag, or even add it to any site or html page for you're intro (click and drag stutter is html boxed based "bug").</p>
+</div>
+<button class="collapsible">Pounce Keys</button>
+<div class="content">
+  <p>Pounce Keys is a mobile penetration testing app with client/server side java logging and message sending functions. (wip)</p>
+</div>
+<button class="collapsible">K12 Scripts</button>
+<div class="content">
+  <p>These are a compilation of scripts used to improve remote education.</p>
+</div>
+<button class="collapsible">Kawaii Browsing</button>
+<div class="content">
+  <p>Have you ever wanted you're own friend in the web browser or you're own animated mascot for you're own website? how about everywhere you browse? This is custom html and Tampermonkey code that gives you a gif on the bottom right of the page you can click and drag, more features soon to come.</p>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+
+</div></div></div></section><section class="editable-style section-element silex-id-1677548617122-19 page-home paged-element paged-element-visible"><div class="editable-style container-element silex-id-1677548617122-20 silex-element-content website-width prevent-draggable"><div class="editable-style image-element silex-id-1677553221871-22"><img src="assets/Logo-With-Wordmark.png"></div><div class="editable-style image-element silex-id-1677553528612-24"><img src="assets/Screenshot%202023-02-27%20220520.png"></div><div class="editable-style image-element silex-id-1677553742795-25"><img src="assets/134-target-lineal.gif"></div><div class="editable-style text-element silex-id-1677553765543-26"><div class="silex-element-content normal"><p>Malware/Vuln Hunter</p></div></div></div></section><section class="editable-style section-element silex-id-1677467992355-8 page-home paged-element paged-element-visible"><div class="editable-style container-element silex-id-1677467992356-9 silex-element-content website-width prevent-draggable"><a class="editable-style image-element silex-id-1677391903936-1" href="https://yesterweb.org/no-to-web3/"><img src="assets/noweb3.gif"></a><a class="editable-style image-element silex-id-1677391883697-0" href="https://livefree999.org/"><img src="assets/999.png"></a><a class="editable-style image-element silex-id-1677391960707-3" href="https://www.youtube.com/@nullpounce"><img src="assets/you.png"></a><a class="editable-style image-element silex-id-1677472461099-13" href="https://mastodon.social/@NullPounce"><img src="assets/mast.png"></a><a class="editable-style image-element silex-id-1677540853043-10" a="" href="javascript:alert('what did i tell you??')" target="_blank" img="" src="/assets/noclick.gif" alt="don't click here" title="don't do it"><img src="assets/noclick.gif"></a><a class="editable-style image-element silex-id-1677540700793-9" href="https://twitter.com/NullPounce"><img src="assets/fooktwitter.png"></a></div></section><section class="editable-style section-element silex-id-1677540347829-7 page-home paged-element paged-element-visible"><div class="editable-style container-element silex-id-1677540347830-8 silex-element-content website-width prevent-draggable"><div class="editable-style image-element silex-id-1677542205539-13"><img src="assets/geocities.gif"></div><div class="editable-style image-element silex-id-1677542222186-14"><img src="assets/bobbutton.gif"></div><div class="editable-style image-element silex-id-1677542233449-15"><img src="assets/digitalempirebutton.gif"></div><div class="editable-style image-element silex-id-1677542167905-11"><img src="assets/archlinux.gif"></div><div class="editable-style image-element silex-id-1677542184195-12"><img src="assets/000010.gif"></div><a class="editable-style image-element silex-id-1677391951591-2" href="https://nullpounce.github.io/"><img src="assets/null-badge.png"></a></div></section><div class="editable-style html-element silex-id-1677477200056-24"><div class="silex-element-content"><div align="center"><a href="https://www.free-website-hit-counter.com"><img src="https://www.free-website-hit-counter.com/c.php?d=9&amp;id=146308&amp;s=1" border="0" alt="visits"></a><br><small><a href="https://www.free-website-hit-counter.com" title="visits">visits</a></small></div></div></div><div class="editable-style text-element silex-id-1439554964112-29">
+                <div class="silex-element-content normal">
+                    <p><i></i>
+                    </p>
+                    <p><i>2023 @ NullPounce&nbsp;</i></p>
+                    <p></p>
+                </div>
+            </div></body></html>
